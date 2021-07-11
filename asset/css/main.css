@@ -1,0 +1,83 @@
+:root {
+    --yellow: #F6FFDA;
+    --green: #03a99f;
+    --blue: #0D75C1;
+    --pink: #FFCCCF;
+    --background: #f0fffc;
+}
+
+@font-face {
+    font-family: anjoman;
+    src: url("../font/Anjoman-Regular.woff");
+}
+
+@font-face {
+    font-family: iransans;
+    src: url("../font/IRANSANSWEB.TTF");
+}
+
+body {
+    font-family: iransans, anjoman, serif !important;
+    background: var(--background);
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: calc(100vh - 140px);
+}
+
+/* ****** Both ****** */
+.btn.w-100 {
+    border: 0 !important;
+}
+
+.form-control {
+    background: transparent !important;
+    direction: rtl;
+}
+
+.btn:focus, .form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.bg-green {
+    background: var(--green) !important;
+}
+
+/* ****** Category ****** */
+.btn-category {
+    background: linear-gradient(40deg, #048d84, #20d2c2);
+}
+
+.btn-category::before {
+    position: absolute;
+    content: '';
+    width: 98%;
+    height: 90%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    inset: 0;
+    margin: auto;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    clip-path: polygon(0 60%, 0 0, 20% 0, 100% 40%, 100% 100%, 80% 100%);
+}
+
+.btn-category:hover:before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+}
+
+/* ****** Media ****** */
+@media (max-width: 766px) {
+    main {
+        min-height: calc(100vh - 164px);
+    }
+}

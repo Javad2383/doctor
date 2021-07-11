@@ -1,0 +1,24 @@
+{% extends '_MainLayout.html' %}
+
+{% block title %}انتخاب سمت{% endblock %}
+
+{% block main_block %}
+    <div class="container py-3">
+        <div class="row">
+            <!-- --------------- Doctor --------------- -->
+            <div class="col-12 col-md-6">
+                <a href="{% url 'User:register_doctor' %}" class="btn btn-category position-relative w-100 fs-3">
+                    <span>دکتر</span> <br> <br>
+                    <span>Doctor</span>
+                </a>
+            </div>
+            <!-- --------------- Patient --------------- -->
+            <div class="col-12 col-md-6 mt-5 mt-md-0">
+                <a href="{% url 'User:register_patient' %}" class="btn btn-category position-relative w-100 fs-3">
+                    <span>بیمار</span> <br> <br>
+                    <span>Patient</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

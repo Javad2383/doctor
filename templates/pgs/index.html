@@ -1,0 +1,32 @@
+{% extends '_MainLayout.html' %}
+
+{% block main_block %}
+    <div class="container py-3 pt-md-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <a href="{% url 'User:login_view' %}" class="btn btn-category position-relative w-100 fs-3">
+                    <span>ورود</span> <br> <br>
+                    <span>Login</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <a href="" class="btn btn-category position-relative w-100 fs-3">
+                    <span>منابع</span> <br> <br>
+                    <span>References</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-5">
+                <a href="" class="btn btn-category position-relative w-100 fs-3">
+                    <span>درباره نرم افزار</span> <br> <br>
+                    <span>About App</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-5">
+                <a href="" class="btn btn-category position-relative w-100 fs-3">
+                    <span>تنظیمات و راهنما</span> <br> <br>
+                    <span>Settings & Help</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
